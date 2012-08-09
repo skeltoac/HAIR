@@ -1,13 +1,24 @@
 # HAIR
 ## HTTP Accept Image Ranges
 
-A protocol allowing web browsers to request optimal representations of images according to their physical display properties, network connection properties, magnification level, visible extents, user preferences, etc.
+A protocol allowing web browsers to request optimal representations of images according to their 
+
+* physical display properties,
+* network connection properties,
+* magnification level,
+* visible extents,
+* user preferences,
+* etc.,
+
+with existing HTML, CSS, and JS.
 
 ### Problem:
 
-Displays with high pixel ratios look their best with higher-resolution graphical elements. Mobile device vendors spent a great deal more time on integrating hi-res graphics in their operating systems than they invested in web graphics. New methods are appearing every day involving changes to HTML, CSS, javascript, and even cookies.
+Displays with high pixel ratios look their best with higher-resolution graphical elements. So do 1:1 devices when magnifying documents. Device vendors spent a great deal more time on integrating hi-res graphics in their operating systems than they invested in web graphics. New methods are appearing every day involving changes to HTML, CSS, JS, and even cookies.
 
-All of the existing solutions for web graphics are predicated on existing browser and server technologies. My own work in this field (WordPress.com's devicepx.js) has taught me that this entire approach should be made redundant as soon as possible. A step in the right direction would be to move the solution down the stack, out of the application and into the underlying layer: HTTP clients and servers.
+All of the existing solutions for web graphics are predicated on holding browser and server technologies constant and varying the applications that run on top of them (HTML, CSS, JS). My own work in this field (WordPress.com's devicepx.js) has taught me that this entire approach should be made redundant as soon as possible.
+
+A step in the right direction would be to move the problem down the stack, out of the application and into the underlying layer: HTTP clients and servers. Web pages and their creators and maintainers vastly outnumber the software options for browsers and servers. Holding HTML, CSS and JS constant and varying client and server software will be vastly more effective and efficient.
 
 ### Solution:
 
